@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="body">
+      <nav>
+        <!-- <input type="checkbox" id="check" class="checkbtn">
+        <label for="check">
+          <i class="fa-solid fa-bars"></i>
+        </label> -->
+        <h2>
+          <a href="index.html" class="logo">Portfo<span>lio</span></a>
+        </h2>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <h3>Hello,my name is</h3>
+      <h1>Pritom <span>Purkayastha</span></h1>
+      <h2>I am a Computer Science Graduate</h2>
+      <div class="newsletter">
+        <form>
+          <input
+            type="email"
+            name="email"
+            id="mail"
+            placeholder="Enter your email"
+          />
+          <input type="submit" name="submit" value="Let's start" />
+        </form>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about-me">
+      <img src="main.jpg" alt="Photo" class="annonomous"/>
+      <section class="about">
+        <div class="about-text">
+          <h2>About <span>Me</span></h2>
+          <p>
+            I, graduated with a degree in Computer Science last year. I choose
+            that field of study because I have always been interested in
+            computers and after completing my graduation I joined Newton School
+            because I saw great opportunities and I was also keen on learning
+            more.
+          </p>
+          <button><a href="#contact">Contact Me</a></button>
+        </div>
+      </section>
+    </div>
+
+    <!-- My Skills -->
+
+    <div class="skills" id="skills">
+      <div class="header">
+        <h1>My Skills</h1>
+      </div>
+      <div class="my-skills">
+          <div class="title">
+            <div class="image">
+              <img src="html.png" class="skill-image"/>
+            </div>
+            <h3>HTML</h3>
+          </div>
+          <div class="title">
+            <div class="image">
+              <img src="css.png" class="skill-image"/>
+            </div>
+            <h3>CSS</h3>
+          </div>
+          <div class="title">
+            <div class="image">
+              <img src="js.png" class="skill-image">
+            </div>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="title">
+            <div class="image">
+              <img src="java.png" class="skill-image">
+            </div>
+            <h3>JAVA</h3>
+          </div>
+          <div class="title">
+            <div class="image">
+              <img src="MySQL.png" class="skill-image">
+            </div>
+            <h3>MySQL</h3>
+          </div>
+      </div>
+    </div>
+
+               <!-- Contact Me -->
+    <div class="contact" id="contact">
+      <h1>Contact Me</h1>
+      <form class="contact-form">
+        <label for="name" class="label">Enter Your Name (required)</label>
+        <input type="text" id="name" class="contact-form-text" placeholder="Your name" required>
+        <label for="email" class="label">Enter Your Email (required)</label>
+        <input type="email" id="email" class="contact-form-text" placeholder="Your email" required>
+        <label for="message" class="label">Your Message (required)</label>
+        <textarea id="message" class="contact-form-text" placeholder="Enter Your Message"></textarea required>
+        <input type="submit" class="contact-form-btn" value="Send">
+      </form>
+    </div>
+
+<!-- FOOTER -->
+  <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="list">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+      <p class="copyright">Pritom Purkayastha @ 2022</p>
+  </footer>
+  </body>
+</html>
