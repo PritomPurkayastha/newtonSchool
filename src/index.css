@@ -57,6 +57,16 @@ nav ul li a:hover{
     color: #FF4500;
     transform: scale(1.2);
 }
+.body nav label i{
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.body nav #check{
+    display: none;
+}
 .content{
     float: right;
     margin-top: 160px;
@@ -289,17 +299,34 @@ textarea.contact-form-text{
 @media (max-width: 910px){
     .logo{
         size: 45px;
+        /* text-align: center; */
+        justify-content: center;
     }
-    nav .menu li a{
-        padding-left: 2rem;
-        /* padding-right: 3%; */
-        font-size: 11px;
-        margin-left: 10px;
+    .body nav ul{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        height: 300px;
+        width: 100%;
+        display: block;
+        background-color: #111;
         text-align: center;
-        position: relative;
-        right: 40px;
+        font-size: 20px;
     }
-    
+    .body nav ul li{
+        margin: 40px 0;
+    }
+    .body nav label i{
+        display: block;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+    }
+
+    #check:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
     .content h1{
         color: white;
         font-size: 45px;
